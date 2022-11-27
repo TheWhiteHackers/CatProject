@@ -4,6 +4,11 @@ document.getElementById("button").addEventListener("click", function catf(e) {
     
     fetch(url)
     .then(response => response.text())
-    .then(data => {console.log(data);})
+    .then(data => {console.log(data);
+    let cut = data.substr(9, data.length-24)
+    document.getElementById("ctext").innerHTML=cut})
+
+
+
 
 });
